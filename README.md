@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Virtual Bank App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React-based bank simulator where users can manage deposits, withdrawals, and calculate interest over time. This app demonstrates basic React state management and arithmetic operations for financial calculations.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- View Balance: Always see your current account balance.
 
-### `npm start`
+- Deposit Funds: Add money to your account safely.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Withdraw Funds: Remove money from your account with validation.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Interest Calculator: Estimate your total savings and interest over multiple years using annual deposits and an interest rate.
 
-### `npm test`
+- Transaction Log: Keep track of all deposits, withdrawals, and interest calculations.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎨 Demo
 
-### `npm run build`
+Check out the live demo here: [Virtual Bank App](https://virtual-atm.netlify.app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React – Frontend library for building interactive UI.
 
-### `npm run eject`
+- TypeScript – Type-safe JavaScript for improved reliability.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- CSS – Styling for a clean and simple layout.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💡 How It Works
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Deposits & Withdrawals: Input a number and click the corresponding button. The balance updates immediately, and the transaction is logged.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-   Interest Calculation: Enter your annual deposit, number of years, and interest rate. The app calculates total interest and total savings using the formula:
 
-## Learn More
+<img src="src/ATM-calculation.png" />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Where:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 𝐷 = annual deposit
+
+- 𝑟 = interest rate (decimal)
+
+- 𝑛 = number of years
+
+- All transactions are displayed in the Transactions section.
+
+## 📌 Notes
+
+- All monetary values are displayed in SEK (Swedish Krona).
+
+- Input validation prevents negative numbers and invalid entries.
+
+## ✨ Future Improvements
+
+- Add login/authentication to simulate multiple users.
+
+- Add transaction categories (e.g., savings, bills, entertainment).
+
+- Implement charts to visualize savings growth over time.
+
+- Add mobile responsiveness and a modern UI design.
